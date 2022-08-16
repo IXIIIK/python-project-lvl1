@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.1"
+version = "0.1.5"
 description = ""
 authors = ["iliya sinitsyn <baner1337228@gmail.com>"]
 packages = [
@@ -14,6 +14,7 @@ prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
 poetry = 'poetry.console:run'
 
 [tool.poetry.dev-dependencies]
