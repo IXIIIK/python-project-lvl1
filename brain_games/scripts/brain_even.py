@@ -31,7 +31,7 @@ def even_game():
         else:
             return print(f"{usr_answer} is wrong answer")
 
-        random_int = random.randint(0, 100)
+        
     return print(f'Congratulations, {name}')
 
 main()
