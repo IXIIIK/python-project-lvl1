@@ -1,8 +1,13 @@
 import random
 import prompt
 
+
 def main():
     pass
+
+
+correct_answer = ('yes', 'no')
+
 
 print('Welcome to the Brain Games!')
 name = prompt.string('May i have your name?: ')
@@ -16,23 +21,24 @@ def even_game():
     i = 0
 
     while i < winstrike:
+        i += 1
+
         random_int = random.randint(0, 100)
         print(f'Question: {random_int}')
         usr_answer = prompt.string('Your answer: ')
 
-        if usr_answer == 'yes' and random_int % 2 == 0 or (
-                usr_answer == 'no' and random_int % 2 != 0):
+        if usr_answer.lower() == 'yes' and random_int % 2 == 0 or (
+                usr_answer.lower() == 'no' and random_int % 2 != 0):
             print('Correct!')
-            i += 1
-        elif usr_answer == 'yes' and random_int % 2 != 0:
-            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}")
-        elif usr_answer == 'no' and random_int % 2 == 0:
-            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}")
+        elif usr_answer.lower() == 'yes' and random_int % 2 != 0:
+            return print(f"'yes' is wrong answer ;(. Correct answer was {correct_answer[1]}.\nLet's try again, {name}")
+        elif usr_answer.lower() == 'no' and random_int % 2 == 0:
+            return print(f"'no' is wrong answer ;(. Correct answer was {correct_answer[0]}.\nLet's try again, {name}")
         else:
             return print(f"{usr_answer} is wrong answer")
 
-        
     return print(f'Congratulations, {name}')
+
 
 main()
 even_game()
