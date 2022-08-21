@@ -1,5 +1,4 @@
 import prompt
-import random
 from brain_games.scripts.logic import random_num
 
 
@@ -8,8 +7,10 @@ name = prompt.string('May i have your name?: ')
 print(f'Hello, {name}!')
 print('Find the greatest common divisor of given numbers.')
 
+
 def main():
     pass
+
 
 def gcd(c):
 
@@ -22,8 +23,6 @@ def gcd(c):
         else:
             b -= a
     return a
-
-
 
 
 def brain_gcd():
@@ -43,7 +42,6 @@ def brain_gcd():
         try:
             print(f'Question: {num1} {num2}')
             usr_answer = prompt.string('Your answer: ')
-
 
             if int(usr_answer) == gcd((num1, num2)):
                 print('Correct!')

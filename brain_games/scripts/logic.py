@@ -1,5 +1,5 @@
 import random
-import prompt
+
 
 
 def random_num(r_one, r_two):
