@@ -1,9 +1,7 @@
+#!/usr/bin/env python3
+
 import random
 import prompt
-
-
-def main():
-    pass
 
 
 correct_answer = ('yes', 'no')

@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
+
 import prompt
 import random
-from brain_games.scripts.logic import random_num
+from brain_games.logic.games_logic import random_num
 
 opper = ('+', '-', '*')
 
@@ -8,10 +10,6 @@ print('Welcome to the Brain Games!')
 name = prompt.string('May i have your name?: ')
 print(f'Hello, {name}!')
 print('What is the result of the expression?')
-
-
-def main():
-    pass
 
 
 def calc_game():
