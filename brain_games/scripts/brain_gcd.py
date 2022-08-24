@@ -1,15 +1,13 @@
+#!/usr/bin/env python3
+
 import prompt
-from brain_games.scripts.logic import random_num
+from brain_games.logic.games_logic import random_num
 
 
 print('Welcome to the Brain Games!')
 name = prompt.string('May i have your name?: ')
 print(f'Hello, {name}!')
 print('Find the greatest common divisor of given numbers.')
-
-
-def main():
-    pass
 
 
 def gcd(c):
@@ -46,12 +44,19 @@ def brain_gcd():
             if int(usr_answer) == gcd((num1, num2)):
                 print('Correct!')
             else:
-                return print(f"'{usr_answer}'is wrong answer ;(. Correct answer was '{correct_answer}'.\nLets try again")
+                return print(f"'{usr_answer}'is wrong answer ;(.\
+Correct answer was '{correct_answer}'.\nLets try again")
 
         except ValueError:
             return print(f"'{usr_answer}' is wrong answer ;(, {name}!")
 
-    return 'Congratulations'
+    if i == 3:
+        print(f'Congratulations, {name}')
 
 
-brain_gcd()
+def main():
+    brain_gcd()
+
+
+if __name__ == '__main__':
+    main()

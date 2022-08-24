@@ -39,18 +39,31 @@ def calc_game():
                 print('Correct!')
 
             elif usr_answer != num1 + num2 and opperator == "+":
-                return print(f"'{usr_answer}' is wrong answer ;(. Correct answer was '{correct_answer[0]}'.\nLet's try again, {name}!")
+                print(f"'{usr_answer}' is wrong answer ;(.\
+Correct answer was '{correct_answer[0]}'.\nLet's try again, {name}!")
+                break
 
             elif usr_answer != num1 - num2 and opperator == "-":
-                return print(f"'{usr_answer}' is wrong answer ;(. Correct answer was '{correct_answer[1]}'.\nLet's try again, {name}!")
+                print(f"'{usr_answer}' is wrong answer ;(.\
+Correct answer was '{correct_answer[1]}'.\nLet's try again, {name}!")
+                break
 
             elif usr_answer != num1 * num2 and opperator == "*":
-                return print(f"'{usr_answer}' is wrong answer ;(. Correct answer was '{correct_answer[2]}'.\nLet's try again, {name}!")
+                print(f"'{usr_answer}' is wrong answer ;(.\
+Correct answer was '{correct_answer[2]}'.\nLet's try again, {name}!")
+                break
 
         except ValueError:
-            return print(f"'{usr_answer}' is wrong answer ;(, {name}!")
+            print(f"'{usr_answer}' is wrong answer ;(, {name}!")
+            break
 
-    return print(f'Congratulations, {name}')
+    if i == 3:
+        print(f'Congratulations, {name}')
 
 
-calc_game()
+def main():
+    calc_game()
+
+
+if __name__ == '__main__':
+    main()
