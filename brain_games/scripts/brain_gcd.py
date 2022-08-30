@@ -5,7 +5,7 @@ from brain_games.logic.games_logic import random_num
 
 
 print('Welcome to the Brain Games!')
-name = prompt.string('May i have your name?: ')
+name = prompt.string('May I have your name? ')
 print(f'Hello, {name}!')
 print('Find the greatest common divisor of given numbers.')
 
