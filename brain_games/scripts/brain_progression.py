@@ -34,7 +34,7 @@ def progress_game():
             i += 1
         else:
             print(f'"{usr_answer}" is wrong answer ;(.\
-Correct answer is "{x}".\nLets try again, {name}!')
+Correct answer is "{x}".\nLet\'s try again, {name}!')
             break
 
     if i == 3:
