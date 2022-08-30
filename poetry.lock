@@ -23,7 +23,7 @@ python-versions = ">=3.6"
 name = "mpmath"
 version = "1.2.1"
 description = "Python library for arbitrary-precision floating-point arithmetic"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -59,7 +59,7 @@ python-versions = ">=3.6"
 name = "sympy"
 version = "1.11"
 description = "Computer algebra system (CAS) in Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.8"
 
@@ -69,7 +69,7 @@ mpmath = ">=0.19"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "96a779550ece8df611b9ad6e8e806dcdec7ab6d388a3d6fd5b9fb199bdaadd74"
+content-hash = "3e9ed6c3ecffc9a368eba9aa9e7e05b30bc7431730b7d669684851cb6b16f05a"
 
 [metadata.files]
 flake8 = [

@@ -2,30 +2,43 @@
 
 import prompt
 import random
-from brain_games.scripts.logic import random_num
+from brain_games.logic.games_logic import random_num
 
 
-def progress():
-
-        num1 = random_num(5, 10)
-        num2 = random_num(23, 40)
-        step = random_num(2, 4)
-        progress = ''
-
-        for i in range(num1, num2, step):
-            progress += str(i)
-            progress += ' '
-
-            progress[step] = '..'
-
-            i += 1
-        return progress
-
+print('Welcome to the Brain Games!')
+name = prompt.string('May i have your name?: ')
+print(f'Hello, {name}!')
+print('What number is missing in progression?')
 
 
 def progress_game():
+    i = 0
+    winstrike = 3
 
-    progress()
+    while i < winstrike:
+
+        step = random_num(4, 6)
+        numbers = list(range(1, 100, step))
+        lenght = random_num(5, 10)
+        numbers = numbers[:lenght]
+        x = random.choice(numbers)
+        index_x = numbers.index(x)
+        numbers[index_x] = '..'
+        numbers = ' '.join(map(str, numbers))
+
+        print(f'Question: {numbers}')
+        usr_answer = prompt.string('Your answer: ')
+
+        if usr_answer == str(x):
+            print('Correct!')
+            i += 1
+        else:
+            print(f'"{usr_answer}" is wrong answer ;(.\
+Correct answer is "{x}".\nLets try again {name}')
+            break
+
+    if i == 3:
+        print(f'Congratulations, {name}!')
 
 
 def main():
