@@ -44,8 +44,8 @@ def brain_gcd():
             if int(usr_answer) == gcd((num1, num2)):
                 print('Correct!')
             else:
-                return print(f"'{usr_answer}'is wrong answer ;(.\
-Correct answer was '{correct_answer}'.\nLets try again!")
+                return print(f"'{usr_answer}' is wrong answer ;(.\
+Correct answer was '{correct_answer}'.\nLets try again {name}!")
 
         except ValueError:
             return print(f"'{usr_answer}' is wrong answer ;(, {name}!")
