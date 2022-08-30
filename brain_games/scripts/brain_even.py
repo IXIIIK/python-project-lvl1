@@ -38,7 +38,7 @@ Correct answer was '{correct_answer[0]}'.\nLet's try again, {name}")
             return print(f"{usr_answer} is wrong answer")
 
     if i == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def main():

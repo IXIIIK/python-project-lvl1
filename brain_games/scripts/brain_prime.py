@@ -41,7 +41,7 @@ Correct answer was '{correct_answer[1]}'.\n Let's try again, {name}!")
             break
 
     if i == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def main():
