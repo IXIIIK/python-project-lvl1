@@ -18,7 +18,6 @@ def calc_game():
     winstrike = 3
 
     while i < winstrike:
-        i += 1
 
         num1 = random_num(0, 25)
         num2 = random_num(0, 10)
@@ -35,6 +34,7 @@ def calc_game():
                     num1 - num2 == usr_answer) or (
                         num1 * num2 == usr_answer):
                 print('Correct!')
+                i += 1
 
             elif usr_answer != num1 + num2 and opperator == "+":
                 print(f"'{usr_answer}' is wrong answer ;(.\
