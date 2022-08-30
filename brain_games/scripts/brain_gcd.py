@@ -45,7 +45,7 @@ def brain_gcd():
                 print('Correct!')
             else:
                 return print(f"'{usr_answer}'is wrong answer ;(.\
-Correct answer was '{correct_answer}'.\nLets try again")
+Correct answer was '{correct_answer}'.\nLets try again!")
 
         except ValueError:
             return print(f"'{usr_answer}' is wrong answer ;(, {name}!")
