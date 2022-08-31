@@ -19,7 +19,7 @@ def prime_game():
 
         number = random_num(2, 100)
 
-        print(f"Question: '{number}'")
+        print(f"Question: {number}")
         correct_answer = ('yes', 'no')
         usr_answer = prompt.string('Your answer: ')
 
