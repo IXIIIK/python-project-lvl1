@@ -23,16 +23,16 @@ def prime_game():
         correct_answer = ('yes', 'no')
         usr_answer = prompt.string('Your answer: ')
 
-        if isprime(num) is True and usr_answer == 'yes' or (
-                isprime(num) is False and usr_answer == 'no'):
+        if isprime(number) is True and usr_answer == 'yes' or (
+                isprime(number) is False and usr_answer == 'no'):
             print('Correct!')
             i += 1
 
-        elif isprime(num) is True and usr_answer == 'no':
+        elif isprime(number) is True and usr_answer == 'no':
             print(f"'{usr_answer}' is wrong answer ;(.\
 Correct answer was '{correct_answer[0]}'.\n Let's try again, {name}!")
             break
-        elif isprime(num) is False and usr_answer == 'yes':
+        elif isprime(number) is False and usr_answer == 'yes':
             print(f"'{usr_answer}' is wrong answer ;(.\
 Correct answer was '{correct_answer[1]}'.\n Let's try again, {name}!")
             break
