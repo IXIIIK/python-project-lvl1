@@ -38,7 +38,7 @@ Correct answer was '{correct_answer[0]}'.\n Let's try again, {name}!")
 Correct answer was '{correct_answer[1]}'.\n Let's try again, {name}!")
             break
         else:
-            print(f'"{usr_answer}" is wrong answer')
+            print(f'"{usr_answer}" is wrong answer./n Let\'s try again, {name}!')
             break
 
     if i == 3:
