@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import prompt
+import random
 from sympy import isprime
 from brain_games.logic.games_logic import random_num
 
@@ -17,7 +18,7 @@ def prime_game():
 
     while i < winstrike:
 
-        number = random_num(1, 100)
+        number = random.randrange(1, 100)
         number = str(number)
         question = f"Question: {number}"
 
