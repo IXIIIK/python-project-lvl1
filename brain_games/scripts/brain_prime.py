@@ -17,7 +17,7 @@ def prime_game():
 
     while i < winstrike:
 
-        number = random_num(2, 100)
+        number = random_num(1, 100)
 
         print(f"Question: {number}")
         correct_answer = ('yes', 'no')
