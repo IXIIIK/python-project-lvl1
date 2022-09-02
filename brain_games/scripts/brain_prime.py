@@ -18,6 +18,7 @@ def prime_game():
     while i < winstrike:
 
         number = random_num(1, 100)
+        number = str(number)
         question = f"Question: {number}"
 
         print(question)
