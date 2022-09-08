@@ -12,35 +12,36 @@ print(f'Hello, {name}!')
 print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
+def prime(number):
+
+    if isprime(number) is True:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return correct_answer
+
+
+
 def prime_game():
     i = 0
     winstrike = 3
 
     while i < winstrike:
 
-        number = random.randrange(1, 100)
-        number = str(number)
-        question = f"Question: {number}"
+        number = random.randrange(0, 100)
 
-        print(question)
-        correct_answer = ('yes', 'no')
+        correct_answer = prime(number)
+
+        print(f"Question: {number}")
         usr_answer = prompt.string('Your answer: ')
 
-        if isprime(number) is True and usr_answer == 'yes' or (
-                isprime(number) is False and usr_answer == 'no'):
+        if correct_answer == 'yes' and usr_answer == 'yes' or (
+            usr_answer == 'no' and usr_answer == 'no'):
             print('Correct!')
             i += 1
-
-        elif isprime(number) is True and usr_answer == 'no':
-            print(f"'{usr_answer}' is wrong answer ;(.\
-Correct answer was '{correct_answer[0]}'.\n Let's try again, {name}!")
-            break
-        elif isprime(number) is False and usr_answer == 'yes':
-            print(f"'{usr_answer}' is wrong answer ;(.\
-Correct answer was '{correct_answer[1]}'.\n Let's try again, {name}!")
-            break
         else:
-            print(f'"{usr_answer}" is wrong answer./n Let\'s try again, {name}!')
+            print(f"'{usr_answer}' is wrong answer ;(.\
+Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
             break
 
     if i == 3:
