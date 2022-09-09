@@ -33,12 +33,14 @@ def prime_game():
         number = random.randrange(0, 100)
 
         correct_answer = prime(number)[0]
-        print(prime(number)[1])
+        quest = prime(number)[1]
 
+
+        print(quest)
         usr_answer = prompt.string('Your answer: ')
 
-        if correct_answer == 'yes' and usr_answer == 'yes' or (
-            correct_answer == 'no' and usr_answer == 'no'):
+        if correct_answer == 'yes' and usr_answer.lower() == 'yes' or (
+            correct_answer == 'no' and usr_answer.lower() == 'no'):
             print('Correct!')
             i += 1
         else:
