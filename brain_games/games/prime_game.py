@@ -33,7 +33,7 @@ def prime_game():
         number = random.randrange(0, 100)
 
         correct_answer = prime(number)[0]
-        quest = prime(number)[1]
+        quest = str(prime(number)[1])
 
 
         print(quest)
