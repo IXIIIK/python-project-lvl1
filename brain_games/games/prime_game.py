@@ -37,7 +37,7 @@ def prime_game():
         usr_answer = prompt.string('Your answer: ')
 
         if correct_answer == 'yes' and usr_answer.lower() == 'yes' or (
-                correct_answer == 'no' and usr_answer.lower() == 'no'):
+                orrect_answer == 'no' and usr_answer.lower() == 'no'):
             print('Correct!')
             i += 1
         else:
