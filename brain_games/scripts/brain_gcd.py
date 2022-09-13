@@ -2,6 +2,7 @@
 
 from brain_games.games.gcd_game import brain_gcd
 
+
 def main():
     brain_gcd()
 

@@ -3,7 +3,6 @@
 import prompt
 import random
 from sympy import isprime
-from brain_games.logic.games_logic import random_num
 
 
 print('Welcome to the Brain Games!')
@@ -23,7 +22,6 @@ def prime(number):
     return correct_answer, question
 
 
-
 def prime_game():
     i = 0
     winstrike = 3
@@ -35,12 +33,11 @@ def prime_game():
         correct_answer = prime(number)[0]
         quest = str(prime(number)[1])
 
-
         print(quest)
         usr_answer = prompt.string('Your answer: ')
 
         if correct_answer == 'yes' and usr_answer.lower() == 'yes' or (
-            correct_answer == 'no' and usr_answer.lower() == 'no'):
+                correct_answer == 'no' and usr_answer.lower() == 'no'):
             print('Correct!')
             i += 1
         else:
