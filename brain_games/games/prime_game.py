@@ -14,11 +14,12 @@ def prime(number):
 
     question = f"Question: {number}"
 
-    for i in range(2, (number // 2) + 1):
+    for i in range(2, number // 2):
         if number % i == 0:
             correct_answer = 'no'
-        else:
-            correct_answer = 'yes'
+
+    correct_answer = 'yes'
+
     return correct_answer, question
 
 
