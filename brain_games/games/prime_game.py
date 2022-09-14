@@ -17,8 +17,10 @@ def prime(number):
     for i in range(2, number // 2):
         if number % i == 0:
             correct_answer = 'no'
-
-    correct_answer = 'yes'
+            break
+    else:
+        correct_answer = 'yes'
+        
 
     return correct_answer, question
 
