@@ -23,7 +23,7 @@ python-versions = ">=3.6"
 name = "mpmath"
 version = "1.2.1"
 description = "Python library for arbitrary-precision floating-point arithmetic"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -57,9 +57,9 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "sympy"
-version = "1.11"
+version = "1.11.1"
 description = "Computer algebra system (CAS) in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 
@@ -69,7 +69,7 @@ mpmath = ">=0.19"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "3e9ed6c3ecffc9a368eba9aa9e7e05b30bc7431730b7d669684851cb6b16f05a"
+content-hash = "96a779550ece8df611b9ad6e8e806dcdec7ab6d388a3d6fd5b9fb199bdaadd74"
 
 [metadata.files]
 flake8 = [
@@ -97,6 +97,6 @@ pyflakes = [
     {file = "pyflakes-2.5.0.tar.gz", hash = "sha256:491feb020dca48ccc562a8c0cbe8df07ee13078df59813b83959cbdada312ea3"},
 ]
 sympy = [
-    {file = "sympy-1.11-py3-none-any.whl", hash = "sha256:b53069f5f30e4a4690b57cdb8e3d0d9065fff42627239db718214f804e442481"},
-    {file = "sympy-1.11.tar.gz", hash = "sha256:1fe96b4c56bb7a7630cdf150a6cd98bc97a79e6be233e30502aba1cf54dee33d"},
+    {file = "sympy-1.11.1-py3-none-any.whl", hash = "sha256:938f984ee2b1e8eae8a07b884c8b7a1146010040fccddc6539c54f401c8f6fcf"},
+    {file = "sympy-1.11.1.tar.gz", hash = "sha256:e32380dce63cb7c0108ed525570092fd45168bdae2faa17e528221ef72e88658"},
 ]

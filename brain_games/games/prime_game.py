@@ -2,7 +2,6 @@
 
 import prompt
 import random
-from sympy import isprime
 
 
 print('Welcome to the Brain Games!')
