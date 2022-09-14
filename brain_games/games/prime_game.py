@@ -15,10 +15,11 @@ def prime(number):
 
     question = f"Question: {number}"
 
-    if isprime(number) is True:
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    for i in range(2, (number // 2) + 1):
+        if number % i == 0:
+            correct_answer = 'no'
+        else:
+            correct_answer = 'yes'
     return correct_answer, question
 
 
@@ -37,7 +38,7 @@ def prime_game():
         usr_answer = prompt.string('Your answer: ')
 
         if correct_answer == 'yes' and usr_answer.lower() == 'yes' or (
-                orrect_answer == 'no' and usr_answer.lower() == 'no'):
+                correct_answer == 'no' and usr_answer.lower() == 'no'):
             print('Correct!')
             i += 1
         else:
