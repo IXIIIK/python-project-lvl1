@@ -2,7 +2,6 @@
 
 import prompt
 import random
-from brain_games.logic.games_logic import random_num
 
 
 print('Welcome to the Brain Games!')
@@ -17,12 +16,13 @@ def progress_game():
 
     while i < winstrike:
 
-        step = random_num(4, 6)
+        step = random.randint(4, 6)
         numbers = list(range(1, 100, step))
-        lenght = random_num(5, 10)
+        lenght = random.randint(5, 10)
         numbers = numbers[:lenght]
         x = random.choice(numbers)
         index_x = numbers.index(x)
+
         numbers[index_x] = '..'
         numbers = ' '.join(map(str, numbers))
 

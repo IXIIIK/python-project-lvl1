@@ -1,6 +1,5 @@
 import prompt
 import random
-from brain_games.logic.games_logic import random_num
 
 opper = ('+', '-', '*')
 
@@ -17,8 +16,8 @@ def calc_game():
 
     while i < winstrike:
 
-        num1 = random_num(0, 25)
-        num2 = random_num(0, 10)
+        num1 = random.randint(0, 25)
+        num2 = random.randint(0, 10)
         correct_answer = (num1 + num2, num1 - num2, num1 * num2)
         opperator = random.choice(opper)
 

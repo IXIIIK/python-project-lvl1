@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import prompt
-from brain_games.logic.games_logic import random_num
+import random
 
 
 print('Welcome to the Brain Games!')
@@ -32,8 +32,8 @@ def brain_gcd():
 
         i += 1
 
-        num1 = random_num(20, 100)
-        num2 = random_num(20, 100)
+        num1 = random.randint(20, 100)
+        num2 = random.randint(20, 100)
 
         correct_answer = gcd((num1, num2))
 
