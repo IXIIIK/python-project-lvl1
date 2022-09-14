@@ -20,7 +20,7 @@ def prime(number):
             break
     else:
         correct_answer = 'yes'
-        
+
 
     return correct_answer, question
 
@@ -34,7 +34,7 @@ def prime_game():
         number = random.randrange(0, 100)
 
         correct_answer = prime(number)[0]
-        quest = str(prime(number)[1])
+        quest = prime(number)[1]
 
         print(quest)
         usr_answer = prompt.string('Your answer: ')
