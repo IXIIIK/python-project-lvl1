@@ -21,7 +21,6 @@ def prime(number):
     else:
         correct_answer = 'yes'
 
-
     return correct_answer, question
 
 
