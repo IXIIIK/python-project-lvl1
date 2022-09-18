@@ -19,7 +19,6 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
-poetry = 'poetry.console:run'
 
 [tool.poetry.dev-dependencies]
 flake8 = "^5.0.4"
