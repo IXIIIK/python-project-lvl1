@@ -8,7 +8,7 @@
 <h1>Asciinema:</h1>
 
 <h3>Installation:</h3>
- <a href="https://asciinema.org/a/Jf8JFv49PM0zgTRXcTPnqbZ0y">
+ <a href="https://asciinema.org/a/Jf8JFv49PM0zgTRXcTPnqbZ0y" target='_blank'>
 
 <h3>Brain-calc:</h3>
  <a href="https://asciinema.org/a/pcSeDk1cso15erzKT28GEeSw9">
