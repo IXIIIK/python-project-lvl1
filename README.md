@@ -5,5 +5,8 @@
 
 <h1>Asciinema:</h1>
 
-<h3>Brain-games</h3>
-https://asciinema.org/a/Hli9vqvS4kp94nFU1dD3qZJUj
+<h3>Installation</h3>
+<a href="https://asciinema.org/a/Jf8JFv49PM0zgTRXcTPnqbZ0y" target="_blank"><img src="https://asciinema.org/a/Jf8JFv49PM0zgTRXcTPnqbZ0y.svg" /></a>
+
+<h3>Brain-calc</h3>
+
