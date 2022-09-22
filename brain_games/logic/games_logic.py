@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
-import random
+import prompt
 
 
-def random_num(r_one, r_two):
-    r_num = random.randint(r_one, r_two)
+def welcome_massege():
 
-    return r_num
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+
+    return name

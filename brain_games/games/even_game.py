@@ -2,17 +2,17 @@
 
 import random
 import prompt
+from brain_games.logic.games_logic import welcome_massege
+
 
 correct_answer = ('yes', 'no')
 
 
-print('Welcome to the Brain Games!')
-name = prompt.string('May I have your name? ')
-print(f'Hello, {name}!')
-print('Answer "yes" if the number is even, otherwise answer "no".')
-
-
 def even_game():
+
+    name = welcome_massege()
+
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     winstrike = 3
     i = 0

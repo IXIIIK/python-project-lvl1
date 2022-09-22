@@ -2,15 +2,14 @@
 
 import prompt
 import random
-
-
-print('Welcome to the Brain Games!')
-name = prompt.string('May I have your name? ')
-print(f'Hello, {name}!')
-print('What number is missing in progression?')
+from brain_games.logic.games_logic import welcome_massege
 
 
 def progress_game():
+
+    name = welcome_massege()
+    print('What number is missing in progression?')
+
     i = 0
     winstrike = 3
 

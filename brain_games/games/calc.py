@@ -1,14 +1,11 @@
+#!/usr/bin/env python3
+
 import prompt
 import random
+from brain_games.logic.games_logic import welcome_massege
 
 opper = ('+', '-', '*')
 opperator = random.choice(opper)
-
-
-print('Welcome to the Brain Games!')
-name = prompt.string('May I have your name? ')
-print(f'Hello, {name}!')
-print('What is the result of the expression?')
 
 
 def calc_question(num1, num2):
@@ -26,6 +23,9 @@ def calc_question(num1, num2):
 
 
 def calc_game():
+
+    name = welcome_massege()
+    print('What is the result of the expression?')
 
     i = 0
     winstrike = 3

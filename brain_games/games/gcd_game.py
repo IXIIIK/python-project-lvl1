@@ -2,12 +2,7 @@
 
 import prompt
 import random
-
-
-print('Welcome to the Brain Games!')
-name = prompt.string('May I have your name? ')
-print(f'Hello, {name}!')
-print('Find the greatest common divisor of given numbers.')
+from brain_games.logic.games_logic import welcome_massege
 
 
 def gcd(c):
@@ -24,6 +19,9 @@ def gcd(c):
 
 
 def brain_gcd():
+
+    name = welcome_massege()
+    print('Find the greatest common divisor of given numbers.')
 
     i = 0
     winstrike = 3

@@ -2,12 +2,7 @@
 
 import prompt
 import random
-
-
-print('Welcome to the Brain Games!')
-name = prompt.string('May I have your name? ')
-print(f'Hello, {name}!')
-print('Answer "yes" if given number is prime. Otherwise answer "no".')
+from brain_games.logic.games_logic import welcome_massege
 
 
 def prime(number):
@@ -25,6 +20,9 @@ def prime(number):
 
 
 def prime_game():
+
+    name = welcome_massege()
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
     winstrike = 3
 
