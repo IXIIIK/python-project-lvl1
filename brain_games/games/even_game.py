@@ -5,7 +5,12 @@ import prompt
 from brain_games.logic.games_logic import welcome_massege
 
 
-correct_answer = ('yes', 'no')
+def even(number):
+    if number % 2 == 0:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return correct_answer
 
 
 def even_game():
@@ -18,25 +23,19 @@ def even_game():
     i = 0
 
     while i < winstrike:
-        i += 1
 
-        random_int = random.randint(0, 100)
-        print(f'Question: {random_int}')
+        number = random.randint(0, 100)
+        print(f'Question: {number}')
         usr_answer = prompt.string('Your answer: ')
+        correct_answer = even(number)
 
-        if usr_answer.lower() == 'yes' and random_int % 2 == 0 or (
-                usr_answer.lower() == 'no' and random_int % 2 != 0):
+        if correct_answer == 'yes' and usr_answer.lower() == 'yes' or (
+                correct_answer == 'no' and usr_answer.lower() == 'no'):
             print('Correct!')
-        elif usr_answer.lower() == 'yes' and random_int % 2 != 0:
-            print(f"'yes' is wrong answer ;(.\
-Correct answer was '{correct_answer[1]}'.\nLet's try again, {name}!")
-            break
-        elif usr_answer.lower() == 'no' and random_int % 2 == 0:
-            print(f"'no' is wrong answer ;(.\
-Correct answer was '{correct_answer[0]}'.\nLet's try again, {name}!")
-            break
+            i += 1
         else:
-            print(f"{usr_answer} is wrong answer")
+            print(f"'{usr_answer}' is wrong answer ;(.\
+Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
             break
 
     if i == 3:
