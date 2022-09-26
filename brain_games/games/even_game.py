@@ -28,13 +28,16 @@ def even_game():
                 usr_answer.lower() == 'no' and random_int % 2 != 0):
             print('Correct!')
         elif usr_answer.lower() == 'yes' and random_int % 2 != 0:
-            return print(f"'yes' is wrong answer ;(.\
+            print(f"'yes' is wrong answer ;(.\
 Correct answer was '{correct_answer[1]}'.\nLet's try again, {name}!")
+            break
         elif usr_answer.lower() == 'no' and random_int % 2 == 0:
-            return print(f"'no' is wrong answer ;(.\
+            print(f"'no' is wrong answer ;(.\
 Correct answer was '{correct_answer[0]}'.\nLet's try again, {name}!")
+            break
         else:
-            return print(f"{usr_answer} is wrong answer")
+            print(f"{usr_answer} is wrong answer")
+            break
 
     if i == 3:
         print(f'Congratulations, {name}!')
