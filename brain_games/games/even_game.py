@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import random
 import prompt
 from brain_games.logic.games_logic import welcome_massege
