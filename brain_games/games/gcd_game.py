@@ -1,6 +1,7 @@
-import prompt
 import random
-from brain_games.logic.games_logic import welcome_massege
+
+
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(c):
@@ -16,36 +17,12 @@ def gcd(c):
     return a
 
 
-def brain_gcd():
+def get_quest_correct_answer():
 
-    name = welcome_massege()
-    print('Find the greatest common divisor of given numbers.')
+    num1 = random.randint(0, 100)
+    num2 = random.randint(0, 100)
 
-    i = 0
-    winstrike = 3
+    question = f'{num1} {num2}'
+    correct_answer = str(gcd((num1, num2)))
 
-    while i < winstrike:
-
-        i += 1
-
-        num1 = random.randint(20, 100)
-        num2 = random.randint(20, 100)
-
-        correct_answer = gcd((num1, num2))
-
-        try:
-            print(f'Question: {num1} {num2}')
-            usr_answer = prompt.string('Your answer: ')
-
-            if int(usr_answer) == gcd((num1, num2)):
-                print('Correct!')
-            else:
-                print(f"'{usr_answer}' is wrong answer ;(.\
-Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
-                break
-
-        except ValueError:
-            return print(f"'{usr_answer}' is wrong answer ;(, {name}!")
-
-    if i == 3:
-        print(f'Congratulations, {name}!')
+    return question, correct_answer

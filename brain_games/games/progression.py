@@ -1,38 +1,31 @@
-import prompt
-import random
-from brain_games.logic.games_logic import welcome_massege
+from random import randint
+
+RULES = 'What number is missing in progression?'
+
+start_prog = 0
+end_prog = 100
+start_step = 2
+end_step = 9
+start_lenght = 5
+end_lenght = 10
 
 
-def progress_game():
+def progress_game(step_p, lenght_p):
+    result = []
+    n = randint(start_prog, end_prog)
+    for i in range(n, n + (step_p * lenght_p), step_p):
+        result.append(str(i))
+    return result
 
-    name = welcome_massege()
-    print('What number is missing in progression?')
 
-    i = 0
-    winstrike = 3
+def get_quest_correct_answer():
+    progression = progress_game(
+        randint(start_step, end_step), randint(start_lenght, end_lenght)
+    )
 
-    while i < winstrike:
+    replace = randint(start_prog, len(progression) - 1)
+    correct_answer = progression[replace]
+    progression[replace] = '..'
+    question = ' '.join(progression)
 
-        step = random.randint(4, 6)
-        numbers = list(range(1, 100, step))
-        lenght = random.randint(5, 10)
-        numbers = numbers[:lenght]
-        x = random.choice(numbers)
-        index_x = numbers.index(x)
-
-        numbers[index_x] = '..'
-        numbers = ' '.join(map(str, numbers))
-
-        print(f'Question: {numbers}')
-        usr_answer = prompt.string('Your answer: ')
-
-        if usr_answer == str(x):
-            print('Correct!')
-            i += 1
-        else:
-            print(f'"{usr_answer}" is wrong answer ;(.\
-Correct answer is "{x}".\nLet\'s try again, {name}!')
-            break
-
-    if i == 3:
-        print(f'Congratulations, {name}!')
+    return question, correct_answer
