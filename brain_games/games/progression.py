@@ -1,6 +1,6 @@
 from random import randint
 
-RULES = 'What number is missing in progression?'
+RULES = 'What number is missing in the progression?'
 
 start_prog = 0
 end_prog = 100
