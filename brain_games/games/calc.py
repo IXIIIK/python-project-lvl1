@@ -3,6 +3,7 @@ import random
 
 RULES = 'What is the result of the expression?'
 
+
 def calc_question(num1, num2, opperator):
 
     question = f'{num1} {opperator} {num2}'

@@ -15,8 +15,6 @@ def prime(number):
     else:
         return True
 
-    return correct_answer
-
 
 def get_quest_correct_answer():
 
