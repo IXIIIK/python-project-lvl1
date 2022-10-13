@@ -2,10 +2,10 @@
 
 import prompt
 
-WINSTRIKE = 3
+ROUND_COUNT = 3
 
 
-def engine_game(game):
+def run_game(game):
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -14,7 +14,7 @@ def engine_game(game):
     print(game.RULES)
     start = 0
 
-    while start < WINSTRIKE:
+    while start < ROUND_COUNT:
         question, correct_answer = game.get_quest_correct_answer()
 
         print(f'Question: {question}')
@@ -25,10 +25,10 @@ def engine_game(game):
             start += 1
         else:
             print(
-                f"'{usr_answer}'is wrong answer ;(. Correct answer was "
+                f"'{usr_answer}' is wrong answer ;(. Correct answer was "
                 f"'{correct_answer}'.\nLet's try again, {name}!"
             )
             break
 
-    if start == WINSTRIKE:
+    else:
         print(f'Congratulations, {name}!')
