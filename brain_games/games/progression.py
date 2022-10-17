@@ -2,17 +2,17 @@ from random import randint
 
 RULES = 'What number is missing in the progression?'
 
-start_prog = 0
-end_prog = 100
-start_step = 2
-end_step = 9
-start_lenght = 5
-end_lenght = 10
+START_PROG = 0
+END_PROG = 100
+START_STEP = 2
+END_STEP = 9
+START_LENGHT = 5
+END_LENGHT = 10
 
 
 def progress_game(step_p, lenght_p):
     result = []
-    n = randint(start_prog, end_prog)
+    n = randint(START_PROG, END_PROG)
     for i in range(n, n + (step_p * lenght_p), step_p):
         result.append(str(i))
     return result
@@ -20,10 +20,10 @@ def progress_game(step_p, lenght_p):
 
 def get_quest_correct_answer():
     progression = progress_game(
-        randint(start_step, end_step), randint(start_lenght, end_lenght)
+        randint(START_STEP, END_STEP), randint(START_LENGHT, END_LENGHT)
     )
 
-    replace = randint(start_prog, len(progression) - 1)
+    replace = randint(START_PROG, len(progression) - 1)
     correct_answer = progression[replace]
     progression[replace] = '..'
     question = ' '.join(progression)

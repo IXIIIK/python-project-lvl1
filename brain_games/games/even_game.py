@@ -6,12 +6,12 @@ BEGIN_RANGE = 0
 END_RANGE = 100
 
 
-def even(value):
-    return 'yes' if value % 2 == 0 else 'no'
+def is_even(number):
+    return 'yes' if number % 2 == 0 else 'no'
 
 
 def get_quest_correct_answer():
     question = random.randint(BEGIN_RANGE, END_RANGE)
-    correct_answer = even(question)
+    correct_answer = is_even(question)
 
     return question, correct_answer
