@@ -34,3 +34,7 @@
 
 <h3>Preview Brain-gcd:</h3>
 <a href="https://asciinema.org/a/Xa22Ei6WT12V1loQdppZm7MiK" target="_blank"><img src="https://asciinema.org/a/Xa22Ei6WT12V1loQdppZm7MiK.svg" /></a>
+
+
+
+<b>P.S</b><p>Thank You</p>
