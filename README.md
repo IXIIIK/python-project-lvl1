@@ -9,7 +9,7 @@
 
 <h3>Installation:</h3>
 <ul>
- <li>clone a repository: https://github.com/IXIIIK/python-project-lvl1</li>
+ <li>clone a repository:<b>git clone https://github.com/IXIIIK/python-project-lvl1</li></b>
  <li>open rep in terminal: cd python-project-lvl1</li>
  <li>install: python3 -m pip install --user dist/*.whl</li>
 </ul>
