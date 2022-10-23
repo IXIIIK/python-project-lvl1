@@ -8,7 +8,11 @@
 <h1>Asciinema:</h1>
 
 <h3>Installation:</h3>
-<a href="https://asciinema.org/a/Xa22Ei6WT12V1loQdppZm7MiK" target="_blank"><img src="https://asciinema.org/a/Xa22Ei6WT12V1loQdppZm7MiK.svg" /></a>
+<ul>
+ <li>clone a repository: https://github.com/IXIIIK/python-project-lvl1</li>
+ <li>open rep in terminal: cd python-project-lvl1</li>
+ <li>install: python3 -m pip install --user dist/*.whl</li>
+</ul>
 
 <h3>Brain-calc:</h3>
 <a href="https://asciinema.org/a/pcSeDk1cso15erzKT28GEeSw9" target="_blank"><img src="https://asciinema.org/a/pcSeDk1cso15erzKT28GEeSw9.svg" /></a>
