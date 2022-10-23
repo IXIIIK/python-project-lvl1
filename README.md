@@ -5,7 +5,7 @@
 
 <a href="https://codeclimate.com/github/IXIIIK/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/2ae8dd4c4f0debcaa142/maintainability"/></a>
 
-<h3>Installation:</h3>
+<h1>Installation:</h1>
 <ul>
  <li>clone a repository: <b>git clone https://github.com/IXIIIK/python-project-lvl1</b></li>
  <li>open rep in terminal: <b>cd python-project-lvl1/</b></li>
