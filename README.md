@@ -5,12 +5,18 @@
 
 <a href="https://codeclimate.com/github/IXIIIK/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/2ae8dd4c4f0debcaa142/maintainability"/></a>
 
+<h1>About project</h1>
+<p><b>Mind Games</b> - is a set of five console games based on popular mobile brain training apps.<br>
+ Each game asks questions that need to be answered correctly.<br>
+ After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.</p>
+
 <h1>Installation:</h1>
 <ul>
  <li>clone a repository: <b>git clone https://github.com/IXIIIK/python-project-lvl1</b></li>
  <li>open rep in terminal: <b>cd python-project-lvl1/</b></li>
  <li>install: <b>python3 -m pip install --user dist/*.whl</b></li>
 </ul>
+
 
 <h1>Asciinema:</h1>
 
