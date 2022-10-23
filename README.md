@@ -37,4 +37,4 @@
 
 
 
-<b>P.S</b><p>Thank You</p>
+<p>P.S. Thank You</p>
