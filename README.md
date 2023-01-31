@@ -14,7 +14,13 @@
 <ul>
  <li>clone a repository: <b>git clone https://github.com/IXIIIK/python-project-lvl1</b></li>
  <li>open rep in terminal: <b>cd python-project-lvl1/</b></li>
- <li>install: <b>python3 -m pip install --user dist/*.whl</b></li>
+ <li>install:
+  <ol>
+   <li><b>make install</b></li>
+   <li><b>make build</b></li>
+   <li><b>make package-install</b></li>
+  </ol>
+ </li>
 </ul>
 
 
